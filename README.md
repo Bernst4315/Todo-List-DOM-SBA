@@ -1,1 +1,2 @@
 # Todo-List-DOM-SBA
+Snarky Todo List is a list with an attitude. Create your own todo list for the day and accomplish as much as you can. Ideally everything. Be warned, Snarky Todo List is hard to please. Can you impress Snarky Todo List or is that an insurmountable task? 
