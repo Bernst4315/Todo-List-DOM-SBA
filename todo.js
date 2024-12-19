@@ -1,13 +1,14 @@
 const orderList = document.querySelector("ol"); 
 const addBtn = document.getElementById("add-btn");
-let listItem = document.createElement("li");
-let liEl = document.querySelector("li");
 
 addBtn.addEventListener("click", () => {
     let input = prompt("Enter ToDo Item");
-    console.log(input);
+    if(input){
+    const listItem = document.createElement("li");
+    //console.log(input);
     listItem.textContent = input;
     orderList.appendChild(listItem);
+    }
     //console.log("click recieved"); 
 })
 

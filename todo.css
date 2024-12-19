@@ -22,10 +22,6 @@ body{
     align-items: center;
 }
 
-#done {
-    text-decoration: line-through;
-}
-
 .done{
     text-decoration: line-through;
 }
