@@ -29,12 +29,7 @@ finBtn.addEventListener("click", () => {
     const allLiEl = document.querySelectorAll("li");
     const doneEl = document.querySelectorAll(".done1")
     let score = doneEl.length/allLiEl.length;
-    // switch(score){
-    //     case 0: scoreEl.textContent = "Lazy Bum!";
-    
-    //     default:
-    //         break; 
-    // }
+
     if(score === 0 || allLiEl.length === 0){
         scoreEl.textContent = "Lazy Bum!"
     } else if(score > 0 && score <= .2){
@@ -52,4 +47,9 @@ finBtn.addEventListener("click", () => {
     }
 })
 
+const close = document.getElementById("close");
+
+close.addEventListener("click", () => {
+    window.close()
+})
 console.log("Hello")
