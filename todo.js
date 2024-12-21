@@ -29,14 +29,27 @@ finBtn.addEventListener("click", () => {
     const allLiEl = document.querySelectorAll("li");
     const doneEl = document.querySelectorAll(".done1")
     let score = doneEl.length/allLiEl.length;
+    // switch(score){
+    //     case 0: scoreEl.textContent = "Lazy Bum!";
+    
+    //     default:
+    //         break; 
+    // }
     if(score === 0 || allLiEl.length === 0){
         scoreEl.textContent = "Lazy Bum!"
+    } else if(score > 0 && score <= .2){
+        scoreEl.textContent = "Do Better!"
+    }else if (score >.2 && score <= .4){
+        scoreEl.textContent = "Couch Potato"
+    } else if (score > .4 && score <= .6){
+        scoreEl.textContent = "Really? That's it?"
+    }else if (score > .6 && score <= .8){
+        scoreEl.textContent = "Decent... I guess"
+    }else if (score > .8 && score <= .99){
+        scoreEl.textContent = "Wow, you almost did everything. Was getting my hopes up, but I'm left disappointed"
+    }else {
+        scoreEl.textContent = "Wait... what? you did everything. I'm actually impressed"
     }
-    console.log(allLiEl);
-    console.log(doneEl)
-    console.log(doneEl.length, allLiEl.length)
-    console.log(score);
-    console.log("submit")
 })
 
 console.log("Hello")
