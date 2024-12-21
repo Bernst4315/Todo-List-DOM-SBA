@@ -7,15 +7,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: beige;
+    background-color: #e4dcca;
     width: 50%;
     height: 100%;
     margin: 0, 50%; 
-    border: 5px solid brown;
+    border: 5px solid #241205;
 } 
 
 #score{
-    background-color: lightgreen;
+    background-color: #8eac84;
     width:100%;
     display: flex;
     flex-direction: column;

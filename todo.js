@@ -3,7 +3,7 @@ const addBtn = document.getElementById("add-btn");
 const finBtn = document.getElementById("finished-btn");
 const doneList = document.getElementById("done");
 const scoreEl = document.getElementById("score");
-
+alert("Make your todo list, and at the end of the day, whether you compleated everything or not, click finish to get your results");
 addBtn.addEventListener("click", () => {
     let input = prompt("Enter ToDo Item");
     if(input){
@@ -24,11 +24,18 @@ orderList.addEventListener("click", (e) => {
     //done counter
     //console.log("click")
 })
-
+let counter = 0;
 finBtn.addEventListener("click", () => {
+     
     const allLiEl = document.querySelectorAll("li");
-    const doneEl = document.querySelectorAll(".done1")
-    let score = doneEl.length/allLiEl.length;
+    let doneEl = document.querySelectorAll(".done1")
+    doneEl.forEach(() =>{     
+        counter ++;
+    })
+
+   
+
+    let score = counter/allLiEl.length;
 
     if(score === 0 || allLiEl.length === 0){
         scoreEl.textContent = "Lazy Bum!"
@@ -52,4 +59,3 @@ const close = document.getElementById("close");
 close.addEventListener("click", () => {
     window.close()
 })
-console.log("Hello")
